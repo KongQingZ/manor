@@ -3,4 +3,32 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--主题蓝-->
+    <color name="themeBlue">#0079FE</color>
+    <!--辅助蓝-->
+    <color name="auxiliaryBlue">#3399ff</color>
+    <!--辅助浅蓝-->
+    <color name="auxiliaryLightBlue">#2db7f5</color>
+    <!--灰色-->
+    <color name="grey">#F9F9F9</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--辅助红-->
+    <color name="auxiliaryRed">#FF3B30</color>
+    <!--辅助黑-->
+    <color name="auxiliaryBlack">#464c5b</color>
+    <!--辅助绿-->
+    <color name="auxiliaryGreen">#4BD863</color>
+    <!--辅助浅黄-->
+    <color name="auxiliaryYellow">#FE9400</color>
+    <!--辅助浅红-->
+    <color name="auxiliaryLightRed">#F95E5A</color>
+
+    <!--字体色-->
+    <color name="fontColor">#333333</color>
+    <!--次要字体色-->
+    <color name="secondaryFontColor">#666666</color>
+    <!--辅助字体色-->
+    <color name="auxiliaryFontColor">#999999</color>
 </resources>

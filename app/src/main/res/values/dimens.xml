@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题-->
+    <dimen name="mainTitle">18sp</dimen>
+    <!--次标题-->
+    <dimen name="subHeading">16sp</dimen>
+    <!--正文-->
+    <dimen name="text">14sp</dimen>
+    <!--小正文-->
+    <dimen name="smallText">12sp</dimen>
+
+</resources>
