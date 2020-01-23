@@ -21,14 +21,14 @@ import static android.content.ContentValues.TAG;
 * */
 public class NetUtil {
 
-    private OkHttpClient okHttpClient = new OkHttpClient();
+    private static OkHttpClient okHttpClient = new OkHttpClient();
 
     /**
      * 异步Get
      * @param url 请求的网址，带有参数
      * @return Call，用于进行返回结果的处理
      */
-    Call netAsynGet(String url, Map<String,String> header){
+    static Call netGet(String url, Map<String,String> header){
 
         final Request.Builder builder = new Request.Builder();
 
@@ -59,14 +59,15 @@ public class NetUtil {
         });*/
     }
 
+
     /**
-     * 异步Post提交
+     * Post提交
      * @param url 网址
      * @param values 请求值
      * @param header 请求头(token等)
      * @return Call，用来处理返回值
      */
-    Call netAsynPost(String url,Map<String,String> values,Map<String,String> header){
+    static Call netPost(String url,Map<String,String> values,Map<String,String> header){
 
         final FormBody.Builder formBuilder = new FormBody.Builder();
 
@@ -107,5 +108,8 @@ public class NetUtil {
             }
         });*/
     }
+
+
+
 
 }
