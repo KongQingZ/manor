@@ -12,6 +12,4 @@
         android:layout_height="640dp"
         android:text="全部"/>
 
-
-
 </LinearLayout>
