@@ -6,10 +6,18 @@ import android.content.SharedPreferences;
 public class SPUtil {
 
     /*这个类是存放SharedPreferences数据的，使用方式：
-    *
-    * SPUtils.setParam(BasesActivity.this,"trim",trim);
-    * String ces = SPUtils.getParam(BasesActivity.this, "trim", "").toString();
-    * */
+     *存储数据，
+     * SPUtils.setParam(BasesActivity.this,"trim",trim);
+     * 1：BasesActivity.this:当前Activity的上下文
+     * 2：“trim”键 ，
+     * 3：trim值
+     *
+     * 读取数据：
+     * String ces = SPUtils.getParam(BasesActivity.this, "trim", "").toString();
+     * 1：BasesActivity.this:当前Activity的上下文
+     * 2："trim" 键
+     * 3：""  空串
+     * */
 
     /**
      * 保存在手机里面的文件名
@@ -75,7 +83,6 @@ public class SPUtil {
         else if("Long".equals(type)){
             return sp.getLong(key, (Long)defaultObject);
         }
-
         return null;
     }
 }

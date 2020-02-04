@@ -31,4 +31,9 @@
     <color name="secondaryFontColor">#666666</color>
     <!--辅助字体色-->
     <color name="auxiliaryFontColor">#999999</color>
+
+    <!--    新加的颜色-->
+    <!--透明颜色-->
+    <color name="TransparentFontColor">#00FFFFFF</color>
+
 </resources>

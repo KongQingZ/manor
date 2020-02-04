@@ -29,7 +29,13 @@ dependencies {
 
     implementation 'me.jessyan:autosize:1.1.2' //今日头条适配方案
 
-    implementation("com.squareup.okhttp3:okhttp:4.1.0") //okhttp3
+//    implementation("com.squareup.okhttp3:okhttp:4.1.0") //okhttp3
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    //Okhttp3二次封装  https://github.com/tsy12321/MyOkHttp
+//    implementation 'com.tsy:myokhttp:1.1.4'
+    //阿里解析JSON
+    implementation 'com.alibaba:fastjson:1.2.49'
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    implementation 'com.google.code.gson:gson:2.8.6'
 
-    compile 'com.alibaba:fastjson:1.2.62' //阿里巴巴fastjson
 }

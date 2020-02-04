@@ -1,7 +1,7 @@
 package com.manor.utils;
 
-class TAG {
+public class TAG {
 
-    static String INFO = "INFO";
+    public static String INFO = "INFO";
 
 }

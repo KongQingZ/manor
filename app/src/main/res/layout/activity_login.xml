@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="192dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="184dp"
+        android:hint="手机号码"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/PhonePhoto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toStartOf="@+id/Phone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone" />
+
+    <EditText
+        android:id="@+id/PassWord"
+        android:layout_width="192dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="244dp"
+        android:hint="登录密码"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/BtLogin"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="328dp"
+        android:background="@color/themeBlue"
+        android:text="登录"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PhoneLogin"
+        android:layout_width="102dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="手机验证码登录"
+        android:textColor="@color/themeBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/FindPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:background="@color/TransparentFontColor"
+        android:text="找回密码"
+        android:textColor="@color/themeBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/NewPeoper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/TransparentFontColor"
+        android:text="注册新用户"
+        android:textColor="@color/themeBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtLogin" />
+
+    <ImageView
+        android:id="@+id/PasswordPhoto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toStartOf="@+id/PassWord"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/passwage" />
+
+    <ImageView
+        android:id="@+id/HeadImage"
+        android:layout_width="237dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

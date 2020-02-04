@@ -1,24 +1,17 @@
 package com.manor.utils;
 
-import android.util.Log;
-
-import java.io.IOException;
 import java.util.Map;
 
 import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import okhttp3.Response;
-
-import static android.content.ContentValues.TAG;
 
 
 /*
-* 此工具类是网络请求工具类，其中包含get和post请求，一律返回的是Call，用于返回值的数据处理
-* */
+ * 此工具类是网络请求工具类，其中包含get和post请求，一律返回的是Call，用于返回值的数据处理
+ * */
 public class NetUtil {
 
     private static OkHttpClient okHttpClient = new OkHttpClient();
@@ -44,7 +37,7 @@ public class NetUtil {
                 .get()//默认就是GET请求，可以不写
                 .build();
         return okHttpClient.newCall(request);
-//这里是返回值的处理示例
+        //这里是返回值的处理示例
 /*        //返回结果
         call.enqueue(new Callback() {
             //失败之后的处理
@@ -67,7 +60,7 @@ public class NetUtil {
      * @param header 请求头(token等)
      * @return Call，用来处理返回值
      */
-    static Call netPost(String url,Map<String,String> values,Map<String,String> header){
+    public static Call netPost(String url, Map<String, String> values, Map<String, String> header){
 
         final FormBody.Builder formBuilder = new FormBody.Builder();
 
@@ -94,7 +87,7 @@ public class NetUtil {
                 .build();
 
         return okHttpClient.newCall(request);
-//这里是返回值的处理示例
+        //这里是返回值的处理示例
 /*        call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
