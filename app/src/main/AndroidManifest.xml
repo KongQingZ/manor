@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ResetPassword"></activity>
+        <activity android:name=".fragement.HomeFragment"></activity>
+        <activity android:name=".activity.CoreAcvitity" />
+        <activity android:name=".activity.ResetPassword" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

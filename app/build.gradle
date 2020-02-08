@@ -37,5 +37,8 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.2.49'
     implementation 'com.alibaba:fastjson:1.1.70.android'
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.haibin:calendarview:3.4.0' //日历插件
 
 }

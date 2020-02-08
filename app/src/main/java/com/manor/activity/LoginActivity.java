@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
         RePassword = (Button) findViewById(R.id.FindPassword);//跳转到重置页面
         btnLogin = (Button) findViewById(R.id.BtLogin);
-        Phone = (EditText) findViewById(R.id.Phone);   //手机号
+        Phone = (EditText) findViewById(R.id.Phone);          //手机号
         PassWord = (EditText) findViewById(R.id.PassWord);   //登录密码
         PhoneLogin = (TextView) findViewById(R.id.PhoneLogin);   //手机验证码登录
         NewPeoper = (TextView) findViewById(R.id.NewPeoper);   //注册新用户
@@ -90,11 +90,17 @@ public class LoginActivity extends AppCompatActivity {
                 Integer money = data.getInteger("money");
                 String token = data.getString("token");
                 Log.i(com.manor.utils.TAG.INFO, "输出: token："+token);
-                SPUtil.setParam(LoginActivity.this,"token",token);
-
+                SPUtil.setParam(LoginActivity.this,"token",token);   //存储token值
+                //判定完成跳转到主页面
+               String  mtoken = (String) SPUtil.getParam(LoginActivity.this,"token","");
             } catch (Exception e) {
                 e.printStackTrace();
             }
+            //跳转到主页面
+            Intent coreactivity = new Intent(LoginActivity.this,CoreAcvitity.class);
+            startActivity(coreactivity);
+            finish();
+
         }
     };
 

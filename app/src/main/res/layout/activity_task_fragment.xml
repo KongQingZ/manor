@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragement.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--    标题栏-->
+        <include
+            android:id="@+id/titlebar"
+            layout="@layout/titlebar" />
+        <!--    个人任务和社团任务-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/task_persional"
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:background="@color/TransparentFontColor"
+                android:text="个人任务"
+                android:textSize="@dimen/mainTitle"></Button>
+
+            <Button
+                android:id="@+id/tesk_associate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/TransparentFontColor"
+                android:text="社团任务"
+                android:textSize="@dimen/mainTitle"></Button>
+
+        </LinearLayout>
+<!--        SimplerSeacherView-->
+<!--       用法网址 https://blog.csdn.net/yu540135101/article/details/89815682-->
+        <SearchView
+            android:id="@+id/sv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="请输入要查询的内容" />
+
+        <!--任务栏列表布局-->
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:calendarViewShown="true"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+            android:spinnersShown="true"
+            android:timePickerMode="spinner"></CalendarView>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar" />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/tb_top"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/add"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -18,7 +18,6 @@ public class ResetPassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
         //测试存储值
-        //        Log.i("输出：", SPUtil.getParam(ResetPassword.this,"token","").toString());
         String st =  GetPhoneCodeUtil.getKey("17861313485");   //获取验证码的K
         Log.i("输出验证码K", st);
     }

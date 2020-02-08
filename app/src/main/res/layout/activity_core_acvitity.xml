@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".activity.CoreAcvitity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--    底部栏-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bottom_parent_bg"
+        android:orientation="horizontal">
+<!--drawableTop表示的是：在区域的顶部-->
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/MainButtonStyle"
+
+            android:drawableTop="@drawable/home_button_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_task"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/task_button_selector"
+            android:text="任务" />
+
+        <RadioButton
+            android:id="@+id/rb_manor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/manor_button_selector"
+            android:gravity="center"
+            android:text="庄园" />
+
+        <RadioButton
+            android:id="@+id/rb_association"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/association_button_selector"
+            android:text="社区" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/persional_button_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+</LinearLayout>
